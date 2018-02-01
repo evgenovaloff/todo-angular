@@ -1,0 +1,13 @@
+<div class="row mb-4">
+    <div class="col-8">
+        <span class="lead">Список TODO-дел</span>
+    </div>
+    <div class="col-4 d-flex justify-content-end">
+        <button class="btn btn-primary" ng-click="$ctrl.add()">Добавить задачу</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12" ng-repeat="todo in $ctrl.todos">
+        <todo obj="todo"></todo>
+    </div>
+</div>

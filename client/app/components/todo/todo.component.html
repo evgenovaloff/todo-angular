@@ -1,0 +1,11 @@
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <div class="input-group-text">
+            <input type="checkbox" ng-model="$ctrl.obj.completed" aria-label="Выполнено ли это задание?">
+        </div>
+    </div>
+    <input type="text" class="form-control" ng-class="$ctrl.obj.completed ? 'striked' : ''" ng-disabled="$ctrl.obj.completed" ng-model="$ctrl.obj.text" aria-label="Text input with checkbox">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" ng-click="$ctrl.save()">{{ $ctrl.txt }}</button>
+    </div>
+</div>
